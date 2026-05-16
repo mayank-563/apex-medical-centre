@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Medical Centre | Mumbai's Premier Healthcare Network</title>
+  <meta name="description" content="Apex Medical Centre — Mumbai's most trusted multi-specialty hospital. Book appointments, access patient portal, explore specialties & research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP UTILITY BAR -->
+<div class="utility-bar" id="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <span>🚨 Emergency: <a href="tel:112">112</a></span>
+      <span>📍 BKC, Mumbai | Andheri | Powai | Thane</span>
+    </div>
+    <div class="utility-right">
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+      <a href="#portal">Patient Portal</a>
+      <a href="#careers">Careers</a>
+      <select aria-label="Language">
+        <option>English</option>
+        <option>हिंदी</option>
+        <option>मराठी</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">
+      <span class="logo-icon">⚕</span>
+      <div>
+        <span class="logo-name">Apex Medical Centre</span>
+        <span class="logo-tagline">Excellence in Every Heartbeat</span>
+      </div>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#specialties" class="nav-link">Specialties</a>
+      <a href="#doctors" class="nav-link">Find a Doctor</a>
+      <a href="#packages" class="nav-link">Health Checks</a>
+      <a href="#facilities" class="nav-link">Facilities</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-outline" onclick="openModal('symptomModal')">Symptom Checker</button>
+      <button class="btn btn-primary" onclick="openModal('appointmentModal')">Book Appointment</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">🏆 JCI Accredited | NABH Certified</div>
+    <h1>Mumbai's Most Advanced <br><span class="hero-accent">Multi-Specialty Hospital</span></h1>
+    <p>Delivering compassionate, cutting-edge healthcare to over 2 million patients across Mumbai. Where science meets humanity.</p>
+    <div class="hero-cta">
+      <button class="btn btn-primary btn-lg" onclick="openModal('appointmentModal')">Book an Appointment</button>
+      <a href="#specialties" class="btn btn-ghost btn-lg">Explore Specialties →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>47+</strong><span>Specialties</span></div>
+      <div class="stat"><strong>850+</strong><span>Specialists</span></div>
+      <div class="stat"><strong>2M+</strong><span>Lives Touched</span></div>
+      <div class="stat"><strong>98.7%</strong><span>Success Rate</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK ACCESS -->
+<section class="quick-access">
+  <div class="container quick-grid">
+    <a href="#appointment" class="quick-card">
+      <span class="quick-icon">📅</span>
+      <strong>Book Appointment</strong>
+      <small>Available 24/7</small>
+    </a>
+    <a href="#portal" class="quick-card">
+      <span class="quick-icon">🔐</span>
+      <strong>Patient Portal</strong>
+      <small>View Records & Reports</small>
+    </a>
+    <a href="#doctors" class="quick-card">
+      <span class="quick-icon">🩺</span>
+      <strong>Find a Doctor</strong>
+      <small>850+ Specialists</small>
+    </a>
+    <a href="#emergency" class="quick-card quick-emergency">
+      <span class="quick-icon">🚨</span>
+      <strong>Emergency Care</strong>
+      <small>Call 112 — Open 24/7</small>
+    </a>
+  </div>
+</section>
+
+<!-- SPECIALTIES -->
+<section class="section" id="specialties">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Centers of Excellence</span>
+      <h2>World-Class Specialties</h2>
+      <p>Our Centers of Excellence represent the pinnacle of medical expertise, equipped with the most advanced technology available.</p>
+    </div>
+    <div class="specialties-grid">
+      <div class="specialty-card">
+        <div class="specialty-icon" style="background:#EFF6FF">❤️</div>
+        <h3>Cardiology & Heart Surgery</h3>
+        <p>India's highest-volume cardiac centre with robotic-assisted procedures and 24/7 cath lab.</p>
+        <a href="#" class="card-link">Learn More →</a>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon" style="background:#F0FDF4">🧠</div>
+        <h3>Neurology & Neurosurgery</h3>
+        <p>Comprehensive stroke care, epilepsy monitoring, and brain tumor surgery with Gamma Knife.</p>
+        <a href="#" class="card-link">Learn More →</a>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon" style="background:#FFF7ED">🎗️</div>
+        <h3>Oncology & Cancer Care</h3>
+        <p>Multidisciplinary tumor boards, precision immunotherapy, and proton therapy access.</p>
+        <a href="#" class="card-link">Learn More →</a>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon" style="background:#FDF4FF">🦴</div>
+        <h3>Orthopaedics & Sports Medicine</h3>
+        <p>Joint replacement, arthroscopy, and rehabilitation for athletes and active patients.</p>
+        <a href="#" class="card-link">Learn More →</a>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon" style="background:#F0FDF4">🤰</div>
+        <h3>Women & Child Health</h3>
+        <p>High-risk obstetrics, fetal medicine, neonatology NICU level III, and paediatric surgery.</p>
+        <a href="#" class="card-link">Learn More →</a>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon" style="background:#EFF6FF">🫁</div>
+        <h3>Pulmonology & Lung Care</h3>
+        <p>Advanced bronchoscopy, sleep disorders, and critical respiratory care ICU.</p>
+        <a href="#" class="card-link">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="section section-alt" id="doctors">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Specialists</span>
+      <h2>Meet Our Leading Doctors</h2>
+      <p>Board-certified specialists with decades of experience and international training.</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card">
+        <div class="doctor-img" style="background:linear-gradient(135deg,#1e3a5f,#2d6a9f)">
+          <span>Dr. R</span>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Rohit Sharma</h3>
+          <span class="doctor-specialty">Interventional Cardiology</span>
+          <p>30+ years | AIIMS Delhi | 10,000+ procedures</p>
+          <button class="btn btn-sm btn-outline" onclick="openModal('appointmentModal')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-img" style="background:linear-gradient(135deg,#1a4731,#2d8653)">
+          <span>Dr. P</span>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Priya Nair</h3>
+          <span class="doctor-specialty">Neuro-Oncology</span>
+          <p>25+ years | Johns Hopkins | Pioneer in GBM therapy</p>
+          <button class="btn btn-sm btn-outline" onclick="openModal('appointmentModal')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-img" style="background:linear-gradient(135deg,#4a1942,#9b3a97)">
+          <span>Dr. A</span>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Anil Mehta</h3>
+          <span class="doctor-specialty">Orthopaedic Surgery</span>
+          <p>28+ years | Stanford | Robotic joint replacement specialist</p>
+          <button class="btn btn-sm btn-outline" onclick="openModal('appointmentModal')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-img" style="background:linear-gradient(135deg,#5c2a0e,#c2692a)">
+          <span>Dr. S</span>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Sunita Rao</h3>
+          <span class="doctor-specialty">Fetal Medicine & High-Risk OB</span>
+          <p>22+ years | Oxford | 5000+ high-risk deliveries</p>
+          <button class="btn btn-sm btn-outline" onclick="openModal('appointmentModal')">Book Consultation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section" id="facilities">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Network</span>
+      <h2>Premium Facilities Across Mumbai</h2>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-card">
+        <div class="facility-img facility-img-1"></div>
+        <div class="facility-body">
+          <h3>BKC Flagship Hospital</h3>
+          <p>750-bed quaternary care centre with 18 modular OTs, Level-1 Trauma, and Helipad.</p>
+          <span class="facility-tag">📍 Bandra Kurla Complex</span>
+        </div>
+      </div>
+      <div class="facility-card">
+        <div class="facility-img facility-img-2"></div>
+        <div class="facility-body">
+          <h3>Andheri Advanced Care</h3>
+          <p>300-bed specialty hospital focused on Cancer, Neuro, and Women's Health.</p>
+          <span class="facility-tag">📍 Andheri West</span>
+        </div>
+      </div>
+      <div class="facility-card">
+        <div class="facility-img facility-img-3"></div>
+        <div class="facility-body">
+          <h3>Powai Wellness Hub</h3>
+          <p>Outpatient diagnostics, physiotherapy, preventive health checks, and telemedicine.</p>
+          <span class="facility-tag">📍 Powai, Hiranandani</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section class="section section-alt" id="technology">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Innovation</span>
+      <h2>Cutting-Edge Medical Technology</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <span class="tech-icon">🤖</span>
+        <h3>Da Vinci Robotic Surgery</h3>
+        <p>Minimally invasive robotic-assisted operations with sub-millimetre precision.</p>
+      </div>
+      <div class="tech-item">
+        <span class="tech-icon">🧬</span>
+        <h3>AI-Powered Diagnostics</h3>
+        <p>Machine-learning radiology reading with 99.2% accuracy and 30-minute turnaround.</p>
+      </div>
+      <div class="tech-item">
+        <span class="tech-icon">🔬</span>
+        <h3>Genomic Medicine Lab</h3>
+        <p>Whole-genome sequencing enabling personalised cancer treatment protocols.</p>
+      </div>
+      <div class="tech-item">
+        <span class="tech-icon">💻</span>
+        <h3>Integrated EMR & Telemedicine</h3>
+        <p>HIPAA-compliant digital records and video consultations from anywhere in India.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Clinical Research</span>
+      <h2>Active Clinical Trials</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="research-table" aria-label="Active clinical trials">
+        <thead>
+          <tr>
+            <th>Trial ID</th>
+            <th>Title</th>
+            <th>Phase</th>
+            <th>Department</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>APEX-CT-2024-001</td>
+            <td>Novel CAR-T Therapy for Relapsed AML</td>
+            <td>Phase II</td>
+            <td>Haematology</td>
+            <td><span class="badge badge-green">Recruiting</span></td>
+          </tr>
+          <tr>
+            <td>APEX-CT-2024-002</td>
+            <td>AI-guided Stroke Triage Protocol</td>
+            <td>Phase III</td>
+            <td>Neurology</td>
+            <td><span class="badge badge-blue">Active</span></td>
+          </tr>
+          <tr>
+            <td>APEX-CT-2024-003</td>
+            <td>Microbiome Modulation in IBD</td>
+            <td>Phase II</td>
+            <td>Gastroenterology</td>
+            <td><span class="badge badge-green">Recruiting</span></td>
+          </tr>
+          <tr>
+            <td>APEX-CT-2024-004</td>
+            <td>Wearable ECG for Paroxysmal AF Detection</td>
+            <td>Phase I</td>
+            <td>Cardiology</td>
+            <td><span class="badge badge-yellow">Screening</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-alt" id="patients">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Patient Stories</span>
+      <h2>Lives Transformed</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"After my triple bypass at Apex BKC, the post-op care was extraordinary. The nurses and Dr. Sharma's team gave me a second life."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MK</div>
+          <div><strong>Mahesh Kumar</strong><small>Cardiac Surgery Patient, 2024</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"The telemedicine facility let me consult Dr. Nair from Pune without travelling. The diagnosis was spot-on and the treatment worked within weeks."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div><strong>Sneha Rao</strong><small>Neurology Patient, 2024</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"My mother's high-risk pregnancy was managed with such expertise and warmth. Both she and the baby are perfectly healthy today."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AP</div>
+          <div><strong>Arjun Patel</strong><small>Family of Maternity Patient, 2024</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALTH PACKAGES -->
+<section class="section" id="packages">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Preventive Care</span>
+      <h2>Health Checkup Packages</h2>
+      <p>Proactive health management tailored for every age and lifestyle.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="package-card">
+        <h3>Basic Wellness</h3>
+        <div class="package-price">₹2,999</div>
+        <ul class="package-features">
+          <li>Complete Blood Count (CBC)</li>
+          <li>Lipid Profile</li>
+          <li>Liver & Kidney Function</li>
+          <li>ECG & Chest X-Ray</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%" onclick="openModal('appointmentModal')">Book Now</button>
+      </div>
+      <div class="package-card featured-package">
+        <div class="package-badge">Most Popular</div>
+        <h3>Comprehensive Care</h3>
+        <div class="package-price">₹5,499</div>
+        <ul class="package-features">
+          <li>Everything in Basic</li>
+          <li>Thyroid Profile (T3, T4, TSH)</li>
+          <li>HbA1c & Fasting Sugar</li>
+          <li>Ultrasound Abdomen</li>
+          <li>Cardiology Consultation</li>
+        </ul>
+        <button class="btn btn-primary" style="width:100%" onclick="openModal('appointmentModal')">Book Now</button>
+      </div>
+      <div class="package-card">
+        <h3>Executive Health</h3>
+        <div class="package-price">₹9,999</div>
+        <ul class="package-features">
+          <li>Everything in Comprehensive</li>
+          <li>Vitamin D & B12</li>
+          <li>TMT / Stress Test</li>
+          <li>Dexa Scan (Bone Density)</li>
+          <li>Diet & Lifestyle Consult</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%" onclick="openModal('appointmentModal')">Book Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSURANCE & CORPORATE -->
+<section class="section section-alt" id="insurance">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Cashless Facility</span>
+      <h2>Our Insurance Partners</h2>
+      <p>We are empaneled with all major TPAs and insurance providers for hassle-free cashless hospitalization.</p>
+    </div>
+    <div class="insurance-marquee">
+      <div class="marquee-content">
+        <span class="partner-logo">Star Health</span>
+        <span class="partner-logo">HDFC ERGO</span>
+        <span class="partner-logo">ICICI Lombard</span>
+        <span class="partner-logo">Bajaj Allianz</span>
+        <span class="partner-logo">Niva Bupa</span>
+        <span class="partner-logo">Aditya Birla</span>
+        <span class="partner-logo">Care Health</span>
+        <!-- Duplicate for infinite scroll -->
+        <span class="partner-logo">Star Health</span>
+        <span class="partner-logo">HDFC ERGO</span>
+        <span class="partner-logo">ICICI Lombard</span>
+        <span class="partner-logo">Bajaj Allianz</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNATIONAL PATIENTS -->
+<section class="section" id="international">
+  <div class="container int-grid">
+    <div class="int-content">
+      <span class="section-label">Medical Tourism</span>
+      <h2>International Patients Center</h2>
+      <p>Apex Medical Centre welcomes patients from over 50 countries. Our dedicated international desk ensures a seamless experience from arrival to recovery.</p>
+      <ul class="int-features">
+        <li><span>✈️</span> Complimentary Airport Transfers</li>
+        <li><span>🗣️</span> Dedicated Language Interpreters</li>
+        <li><span>🛂</span> Visa Assistance & FRRO Registration</li>
+        <li><span>🏨</span> Partner Hotels & Guest Houses</li>
+      </ul>
+      <button class="btn btn-primary mt-4">Contact International Desk</button>
+    </div>
+    <div class="int-image">
+      <img src="images/hospital-reception.png" alt="Luxurious Hospital Reception" class="rounded-img">
+    </div>
+  </div>
+</section>
+
+<!-- BLOG & NEWS -->
+<section class="section section-alt" id="blog">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Insights</span>
+      <h2>Latest Health Articles</h2>
+      <p>Expert advice, medical breakthroughs, and wellness tips from our specialists.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="#" class="blog-card">
+        <img src="images/blog-heart.png" alt="Doctor with 3D Heart Hologram" class="blog-img">
+        <div class="blog-content">
+          <span class="blog-tag">Cardiology</span>
+          <h3>The Future of AI in Heart Surgery</h3>
+          <p>Discover how 3D holography and AI are revolutionizing complex cardiac procedures...</p>
+          <span class="blog-date">May 12, 2024 • 5 min read</span>
+        </div>
+      </a>
+      <a href="#" class="blog-card">
+        <img src="images/blog-diet.png" alt="Healthy Superfood Salad" class="blog-img">
+        <div class="blog-content">
+          <span class="blog-tag">Nutrition</span>
+          <h3>Superfoods for Faster Surgical Recovery</h3>
+          <p>Our head dietitian shares the top 5 nutrient-dense foods to include in your post-op diet...</p>
+          <span class="blog-date">May 08, 2024 • 4 min read</span>
+        </div>
+      </a>
+      <a href="#" class="blog-card">
+        <img src="images/blog-mental.png" alt="Luxurious Recovery Lounge" class="blog-img">
+        <div class="blog-content">
+          <span class="blog-tag">Wellness</span>
+          <h3>The Importance of Environment in Healing</h3>
+          <p>Why modern hospital design prioritizes natural light, green spaces, and quiet luxury...</p>
+          <span class="blog-date">May 02, 2024 • 6 min read</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Help Centre</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I book an appointment online?</button>
+        <div class="faq-a">Click "Book Appointment" in the header or any section. Fill in your details, choose a doctor and time slot. You'll receive confirmation via SMS and email.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Which insurance plans do you accept?</button>
+        <div class="faq-a">We accept all major TPA cashless policies including Star Health, HDFC Ergo, Bajaj Allianz, ICICI Lombard, United India, and government schemes like PMJAY / Ayushman Bharat.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is telemedicine consultation available?</button>
+        <div class="faq-a">Yes. Video consultations are available 24/7 for follow-ups and non-emergency concerns. Book via the Patient Portal and join from any device.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I access my lab reports online?</button>
+        <div class="faq-a">Log into the Patient Portal using your registered mobile number. Reports are available within 4 hours of sample collection for most tests.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What are your visiting hours?</button>
+        <div class="faq-a">General wards: 10 AM – 12 PM and 5 PM – 7 PM. ICU/NICU: 1 visitor, 11 AM – 12 PM only. Emergency department is open 24/7 with no restrictions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <span class="section-label">Get In Touch</span>
+      <h2>We're Here to Help</h2>
+      <div class="contact-items">
+        <div class="contact-item"><span>📍</span><div><strong>Main Campus</strong><p>Block G, Bandra Kurla Complex, Mumbai – 400051</p></div></div>
+        <div class="contact-item"><span>📞</span><div><strong>Appointments</strong><p>+91 22 4800 1000</p></div></div>
+        <div class="contact-item"><span>🚨</span><div><strong>Emergency</strong><p>112 | +91 22 4800 9999</p></div></div>
+        <div class="contact-item"><span>✉️</span><div><strong>Email</strong><p>care@apexmedical.in</p></div></div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <h3>Send a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cf-name">Full Name *</label>
+          <input type="text" id="cf-name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-phone">Phone *</label>
+          <input type="tel" id="cf-phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label for="cf-message">Message *</label>
+        <textarea id="cf-message" rows="4" placeholder="How can we help?" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="careers">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-icon">⚕</span>
+      <strong>Apex Medical Centre</strong>
+      <p>Mumbai's most trusted multi-specialty healthcare network since 1998. JCI Accredited. NABH Certified.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">𝔽</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>For Patients</h4>
+      <a href="#appointment">Book Appointment</a>
+      <a href="#portal">Patient Portal</a>
+      <a href="#insurance">Insurance & Billing</a>
+      <a href="#visiting">Visiting Hours</a>
+      <a href="#records">Medical Records</a>
+    </div>
+    <div class="footer-col">
+      <h4>Specialties</h4>
+      <a href="#">Cardiology</a>
+      <a href="#">Neurology</a>
+      <a href="#">Oncology</a>
+      <a href="#">Orthopaedics</a>
+      <a href="#">Women & Child</a>
+    </div>
+    <div class="footer-col">
+      <h4>Organisation</h4>
+      <a href="#">About Us</a>
+      <a href="#careers">Careers</a>
+      <a href="#">Research</a>
+      <a href="#">Media & Press</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Apex Medical Centre Pvt. Ltd. | Mumbai | All Rights Reserved</p>
+    <p>HIPAA & DPDP Act Compliant | Emergency: 112</p>
+  </div>
+</footer>
+
+<!-- APPOINTMENT MODAL -->
+<div class="modal-overlay" id="appointmentModal" role="dialog" aria-modal="true" aria-label="Book Appointment">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('appointmentModal')" aria-label="Close">✕</button>
+    <h2>Book an Appointment</h2>
+    <p class="modal-sub">Secure • Confidential • Confirmed within 2 hours</p>
+    <form id="appointmentForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ap-name">Full Name *</label>
+          <input type="text" id="ap-name" placeholder="Patient name" required>
+        </div>
+        <div class="form-group">
+          <label for="ap-phone">Phone *</label>
+          <input type="tel" id="ap-phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ap-dept">Department *</label>
+        <select id="ap-dept" required>
+          <option value="">Select a specialty</option>
+          <option>Cardiology</option>
+          <option>Neurology</option>
+          <option>Oncology</option>
+          <option>Orthopaedics</option>
+          <option>Women & Child Health</option>
+          <option>Pulmonology</option>
+          <option>General Medicine</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ap-date">Preferred Date *</label>
+          <input type="date" id="ap-date" required>
+        </div>
+        <div class="form-group">
+          <label for="ap-type">Consultation Type</label>
+          <select id="ap-type">
+            <option>In-Person</option>
+            <option>Telemedicine (Video)</option>
+          </select>
+        </div>
+      </div>
+      <div id="ap-error" class="form-error" aria-live="polite"></div>
+      <button type="submit" class="btn btn-primary" style="width:100%" id="ap-submit">Confirm Appointment</button>
+    </form>
+  </div>
+</div>
+
+<!-- SYMPTOM CHECKER MODAL -->
+<div class="modal-overlay" id="symptomModal" role="dialog" aria-modal="true" aria-label="Symptom Checker">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('symptomModal')" aria-label="Close">✕</button>
+    <h2>🩺 Symptom Checker</h2>
+    <p class="modal-sub">This is not a substitute for medical advice. Always consult a doctor.</p>
+    <div class="symptom-checker">
+      <div class="form-group">
+        <label for="sym-input">Describe your symptoms</label>
+        <textarea id="sym-input" rows="4" placeholder="e.g. chest pain, shortness of breath, fever for 3 days..."></textarea>
+      </div>
+      <button class="btn btn-primary" onclick="checkSymptoms()" style="width:100%">Analyse Symptoms</button>
+      <div id="symptom-result" class="symptom-result" aria-live="polite"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
